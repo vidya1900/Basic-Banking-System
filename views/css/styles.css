@@ -1,0 +1,272 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+body{
+  font-size: 20px;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #fff;
+ 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header{
+
+  background-image: url('../images/img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  
+}
+
+
+.row{
+  max-width: 1180px;
+ 
+
+}
+.logo{
+  height: 75px;
+  width:auto;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.main-nav{
+  position: relative;
+  left: 1300px;
+  top: 50px;
+
+  
+}
+.main-nav li{
+  /* display: inline-block; */
+  list-style: none;
+  
+}
+
+.main-nav li a{
+  color: rgb(11, 73, 20);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-rendering: auto;
+  font-size: 90%;
+  font-weight: 100%;
+}
+
+.main-nav li a:hover{
+  border-bottom: 2px solid rgb(43, 226, 98);
+}
+.main-content-header{
+  width: 1180px;
+  position:absolute;
+  border: 1px ;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+}
+
+
+h1{
+  color: rgb(24, 77, 24);
+  font-size: 200%;
+  word-spacing: 5px;
+  
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.btn{
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s,border 0.2s,color 0.2;
+  position: relative;
+  bottom: 40px;
+}
+
+.btn-full{
+  background-color: transparent;
+  color: rgb(6, 48, 25);
+  margin-right: 15px;
+  border:3px solid rgb(0, 139, 7);
+  margin-top: 10px;
+
+}
+.btn-full:hover{
+  background-color: rgb(124, 180, 98);
+}
+
+.btn-nav{
+  background-color:transparent;
+  border-radius: 1px solid #fff;
+  border:1px solid white ;
+  color: #fff;
+}
+
+.btn-nav:hover{
+  background-color: darkmagenta;
+}
+
+h1{
+  color: rgb(41, 121, 41);
+  font-size: 150%;
+  word-spacing: 5px;
+  font-style: italic;
+}
+
+
+.ml3 {
+  font-weight: 450;
+  font-size: 2.0em;
+  position: relative;
+  bottom: 130px;
+  color: rgb(7, 85, 7);
+}
+
+table, th, td {
+  border: 3px solid green;
+  border-collapse: collapse;
+  text-align: center;
+  text-decoration: underline;
+}
+th, td {
+  padding: 15px;
+  text-align: center
+}
+#t01 {
+  width: 60%;    
+  background-color:white;
+  margin: 10px auto 20px auto;
+  align-items: center;
+  color: #041605;
+  font-size: 20px;
+  font-weight:bolder;
+  
+
+}
+
+.formData{
+  color: green;
+  margin-left: 40%;
+  padding-bottom: 20px;
+  
+}
+
+.background{
+ background-image: url('../images/img.jpg');
+ /* background-size: cover; */
+ background-repeat: no-repeat;
+ background-position: center;
+ height:fit-content;
+}
+
+.cust{
+  margin-left: 43%;
+  color: #041605;
+}
+
+
+ .btn-group button{
+  background-color: #4CAF50; 
+  border: 2px solid green;
+  color: rgb(7, 8, 7);
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer; 
+  height: 50px;
+  margin-top: 40px; 
+  margin-right: 15px;
+  border-radius: 10px;
+
+}
+
+ .btn-group button:not(:last-child) {
+  border-right: none;
+} 
+
+
+ .btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+} 
+
+.logo2{
+  height:200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+}
+
+.submit{
+  background-color:green;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: auto;
+  height: 40px;
+  width: 70px;
+}
+
+.modal-header{
+  background-color: rgb(184, 211, 185);
+}
+
+.modal-footer{
+  background-color: rgb(184, 211, 185);
+}
+
+.modal-body{
+  
+  background-color: #ffcfdf;
+background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+}
+
+
+.divisions{
+  border: 3px solid gray;  
+  padding: 1px;
+  background-color: #ffcfdf;
+  background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: fit-content;
+}
+
+.transbox {
+  
+  background-color: #ffffff;
+  border: 2px solid green;
+  opacity: 0.6;
+  margin-bottom: 50px;
+}
+
+.transbox h1 {
+ 
+  font-weight:bolder;
+  color: green;
+}
+
+.btn5{
+  margin-left:400%;
+  background-color: #3e8e41;
+  color: #041605;
+  margin-top: 25px;
+}

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>List</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="background">
+  <div class="divisions transbox">
+<h2 class="cust">All Transactions</h2>
+    <table border="2" width="100%" id="t01" class="table table-dark table-striped">
+        <tr>
+            <th>Transaction ID</th>
+            <th>Debited From </th>
+            <th>Credited To</th>\
+            <th>Amount</th>
+            
+        </tr>
+        
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <td><%=data.transactID %></td>
+            <td><%=data.debit %></td>
+            <td><%=data.credit %></td>
+            <td><%=data.amount %></td>
+
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+    </div>
+    <a type="button" href="/user-list"><button  class="btn btn-secondary btn5">View customers</button></a>
+</body>
+</html>

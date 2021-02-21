@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>List</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="background">
+
+    <div class="container">
+      
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h1 class="modal-title">Transfer Money</h1>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <img src="images/vBank.png" alt="logo" class="logo2">
+                <form action="/user-list" method="POST" class="formData">
+                    
+                    <h2>From: Vidyashri Kalshetti</h2>
+                    <label>Account no:</label>
+                    <input type="number" name="Accno"><br>
+                    <label>Transfer amount:</label>
+                    <input type="number" name="Amt"><br>
+                    <input type="submit" class="submit">
+                </form>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn3 btn-danger" data-dismiss="modal">Close</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="divisions transbox">
+    <center>
+    <h1 >Name: Vidyashri Kalshetti</h1>
+    <h1 >ID:-101</h1>
+ 
+
+<div class="btn-group">
+<a><button type="button" class="btn btn-outline-secondary btn3"  data-toggle="modal" data-target="#myModal">Transfer Money <i class="fas fa-hand-holding-usd"></i></button></a>
+  <a type="button" href="/customer" class="btn2"><button type="button" class="btn btn-outline-secondary">Transactions <i class="far fa-credit-card"></i></button> </a>
+</div>
+</center>
+    <div>
+<h2 class="cust"><i class="fas fa-user"></i> Customers</h2>
+    <table border="2" width="100%" id="t01" class="table table-dark table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Balance</th>
+            
+        </tr>
+        
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <td><%=data.iddata %></td>
+            <td><%=data.customerName %></td>
+            <td><%=data.balance %></td>
+
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+    </div>
+  </div>
+</body>
+</html>
